@@ -1,0 +1,57 @@
+HTTP & Network Monitoring (1-10)
+1.	Single URL HTTP status checker
+2.	Multiple URLs health monitor
+3.	URL checker with argparse (single)
+4.	Multi-URL CLI tool with argparse
+5.	Website title extractor
+6.	SSL certificate expiry checker
+7.	HTTP response time measurer
+8.	Bulk ping health checker
+9.	TCP port connectivity tester
+10.	DNS resolution monitor
+Service Management (11-20)
+11.	Single systemd service status
+12.	Multiple services status check
+13.	Service status CLI (argparse)
+14.	Multi-service CLI monitor
+15.	Failed service auto-restart
+16.	Service restart + notification
+17.	Docker container health check
+18.	K8s pod status summary
+19.	Jenkins job status checker
+20.	Cron job execution monitor
+System Resources (21-30)
+21.	Disk usage threshold alert
+22.	Memory usage percentage
+23.	CPU per-core utilization
+24.	Top CPU consuming processes
+25.	Load average tracker
+26.	Listening ports inventory
+27.	Active network connections
+28.	CPU temperature monitor
+29.	Swap usage alert
+30.	Inode usage checker
+Log & Security (31-40)
+31.	Log file tail follower
+32.	Failed login attempts counter
+33.	404 error log analyzer
+34.	Security events scanner
+35.	Log rotation status check
+36.	Auditd events monitor
+37.	Firewall rules validator
+38.	SELinux status checker
+39.	SSH authorized_keys checker
+40.	Suspicious process detector
+Automation & Backup (41-50)
+41.	Rsync backup with progress
+42.	Directory sync monitor
+43.	Database backup verifier
+44.	Git repository updater
+45.	Package update checker
+46.	Health check dashboard
+47.	Alert email sender
+48.	Slack/Teams notifier
+49.	CSV health report generator
+50.	JSON metrics exporter
+
+
