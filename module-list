@@ -1,6 +1,46 @@
-ssl
-socket
-BeautifulSoup
-subprocess
-request
-datetime
+## Core System & Automation
+
+* `os`
+* `sys`
+* `subprocess`
+* `shutil`
+* `pathlib`
+* `argparse`
+
+## Networking & API Interaction
+
+* `socket`
+* `ssl`
+* `urllib`
+* `requests`
+* `paramiko`
+* `fabric`
+
+## Time & Scheduling
+
+* `time`
+* `datetime`
+
+## Text Parsing & Configuration Formats
+
+* `json`
+* `re`
+* `configparser`
+* `csv`
+* `PyYAML`
+
+## Cloud & Container Orchestration
+
+* `boto3`
+* `google-cloud-storage`
+* `azure-mgmt`
+* `docker`
+* `kubernetes`
+
+## Logging, Environment & Security
+
+* `logging`
+* `hashlib`
+* `secrets`
+* `cryptography`
+* `python-dotenv`
