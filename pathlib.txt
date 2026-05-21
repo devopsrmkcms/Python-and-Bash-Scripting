@@ -1,0 +1,95 @@
+```
+Python pathlib Module
+---------------------
+
+Path Creation & Info
+--------------------
+
+from pathlib import Path; p = Path("file.txt"); print(p)
+
+from pathlib import Path; print(Path.cwd())
+
+from pathlib import Path; print(Path.home())
+
+from pathlib import Path; print(Path("file.txt").name)
+
+from pathlib import Path; print(Path("file.txt").suffix)
+
+from pathlib import Path; print(Path("file.txt").stem)
+
+from pathlib import Path; print(Path("dir/subdir/file.txt").parent)
+
+
+Path Checks
+-----------
+
+from pathlib import Path; print(Path("file.txt").exists())
+
+from pathlib import Path; print(Path("file.txt").is_file())
+
+from pathlib import Path; print(Path("dir").is_dir())
+
+
+File Operations
+---------------
+
+from pathlib import Path; Path("file.txt").write_text("hello")
+
+from pathlib import Path; print(Path("file.txt").read_text())
+
+from pathlib import Path; Path("file.txt").unlink(missing_ok=True)
+
+from pathlib import Path; Path("test_dir").mkdir(exist_ok=True)
+
+from pathlib import Path; Path("a/b/c").mkdir(parents=True, exist_ok=True)
+
+from pathlib import Path; Path("test_dir").rmdir()
+
+
+Directory Listing
+-----------------
+
+from pathlib import Path; print(list(Path(".").iterdir()))
+
+from pathlib import Path; print([f for f in Path(".").glob("*.py")])
+
+from pathlib import Path; print([f for f in Path(".").rglob("*.log")])
+
+
+Path Operations
+---------------
+
+from pathlib import Path; print(Path("/tmp") / "file.txt")
+
+from pathlib import Path; print((Path("/tmp") / "file.txt").resolve())
+
+from pathlib import Path; print(Path("file.txt").absolute())
+
+
+File Metadata
+-------------
+
+from pathlib import Path; print(Path("file.txt").stat())
+
+from pathlib import Path; print(Path("file.txt").stat().st_size)
+
+
+Rename & Move
+-------------
+
+from pathlib import Path; Path("old.txt").rename("new.txt")
+
+from pathlib import Path; Path("file.txt").replace("dest/file.txt")
+
+
+Practical DevOps One-liners
+---------------------------
+
+from pathlib import Path; print([f for f in Path(".").rglob("*.yaml")])
+
+from pathlib import Path; print(sum(f.stat().st_size for f in Path(".").rglob("*") if f.is_file()))
+
+from pathlib import Path; print([d for d in Path(".").iterdir() if d.is_dir()])
+
+from pathlib import Path; print("Exists" if Path("/etc/passwd").exists() else "Missing")
+```
