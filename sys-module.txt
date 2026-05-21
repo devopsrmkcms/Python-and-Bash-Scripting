@@ -1,0 +1,75 @@
+Python sys Module
+-----------------
+
+Basic System Operations
+----------------------
+
+import sys; print(sys.version)
+
+import sys; print(sys.version_info)
+
+import sys; print(sys.platform)
+
+import sys; print(sys.executable)
+
+import sys; print(sys.argv)
+
+import sys; print(len(sys.argv))
+
+print(sys.argv[1])  # (run with argument)
+
+exit()  # or: import sys; sys.exit()
+
+
+Standard Streams
+----------------
+
+import sys; print("Hello", file=sys.stdout)
+
+import sys; print("Error message", file=sys.stderr)
+
+import sys; data = sys.stdin.read(); print(data)
+
+
+Path & Environment
+------------------
+
+import sys; print(sys.path)
+
+import sys; sys.path.append("/tmp")
+
+import sys; print(sys.prefix)
+
+
+Memory & Limits
+---------------
+
+import sys; print(sys.getsizeof("hello"))
+
+import sys; print(sys.getrecursionlimit())
+
+import sys; sys.setrecursionlimit(2000)
+
+
+Interpreter Interaction
+----------------------
+
+import sys; sys.exit(0)
+
+import sys; sys.exit("exit with message")
+
+import sys; print(sys.modules.keys())
+
+
+Practical DevOps One-liners
+---------------------------
+
+import sys; print("Script name:", sys.argv[0])
+
+import sys; print("Args passed:", sys.argv[1:])
+
+import sys; print("Python path:", sys.path)
+
+import sys; print("Installed modules:", list(sys.modules)[:10])
+
+import sys; print("Max recursion:", sys.getrecursionlimit())
