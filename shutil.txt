@@ -1,0 +1,67 @@
+Python shutil Module
+--------------------
+
+File Operations
+---------------
+
+import shutil; shutil.copy("src.txt", "dest.txt")
+
+import shutil; shutil.copy2("src.txt", "dest.txt")
+
+import shutil; shutil.copyfile("src.txt", "dest.txt")
+
+import shutil; shutil.move("src.txt", "dest.txt")
+
+import shutil; shutil.rmtree("dir_name")
+
+import shutil; shutil.copytree("src_dir", "dest_dir")
+
+import shutil; shutil.chown("file.txt", user="root", group="root")
+
+
+Directory & Disk Usage
+----------------------
+
+import shutil; print(shutil.disk_usage("/"))
+
+import shutil; total, used, free = shutil.disk_usage("/"); print(free)
+
+import shutil; print(shutil.which("python"))
+
+
+File Content Operations
+-----------------------
+
+import shutil; shutil.copyfileobj(open("a.txt"), open("b.txt","w"))
+
+import shutil; shutil.make_archive("backup", "zip", "mydir")
+
+import shutil; shutil.unpack_archive("backup.zip", "extract_dir")
+
+
+Temporary & Cleanup Operations
+------------------------------
+
+import shutil, tempfile; d=tempfile.mkdtemp(); print(d)
+
+import shutil, tempfile; shutil.rmtree(tempfile.mkdtemp())
+
+
+Permissions & Metadata
+----------------------
+
+import shutil; shutil.copymode("src.txt", "dest.txt")
+
+import shutil; shutil.copystat("src.txt", "dest.txt")
+
+
+Practical DevOps One-liners
+---------------------------
+
+import shutil; print(shutil.disk_usage("/").free)
+
+import shutil; shutil.make_archive("backup_"+__import__("time").ctime().replace(" ","_"),"zip",".")
+
+import shutil; print("Exists" if shutil.which("docker") else "Not Installed")
+
+import shutil; shutil.rmtree("/tmp/test_dir", ignore_errors=True)
