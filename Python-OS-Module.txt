@@ -1,0 +1,104 @@
+Python OS Module
+----------------
+
+Basic OS Operations
+-------------------
+
+import os; print(os.name)
+
+import os; print(os.getcwd())
+
+import os; os.chdir("/tmp"); print(os.getcwd())
+
+import os; print(os.listdir("."))
+
+import os; os.mkdir("test_dir")
+
+import os; os.makedirs("a/b/c", exist_ok=True)
+
+import os; os.rmdir("test_dir")
+
+import os; os.removedirs("a/b/c")
+
+**********************************
+
+File & Path Handling
+---------------------
+import os; print(os.path.exists("file.txt"))
+
+import os; print(os.path.isfile("file.txt"))
+
+import os; print(os.path.isdir("/tmp"))
+
+import os; print(os.path.join("/home","user","file.txt"))
+
+import os; print(os.path.basename("/home/user/file.txt"))
+
+import os; print(os.path.dirname("/home/user/file.txt"))
+
+import os; print(os.path.splitext("file.txt"))
+
+import os; print(os.path.getsize("file.txt"))
+
+****************************************************
+
+Environment Variables
+---------------------
+
+import os; print(os.environ.get("HOME"))
+import os; os.environ["MY_VAR"]="123"; print(os.environ["MY_VAR"])
+
+*******************************************************************
+
+Process & System Info
+----------------------
+
+import os; print(os.getpid())
+import os; print(os.getppid())
+import os; print(os.cpu_count())
+import os; print(os.uname())
+
+*********************************
+
+Running System Commands
+-------------------------
+
+import os; os.system("ls -l")
+import os; print(os.popen("whoami").read())
+
+*********************************************
+
+File Operations
+----------------
+
+import os; os.rename("old.txt","new.txt")
+import os; os.remove("file.txt")
+import os; os.chmod("file.txt", 0o777)
+
+**************************************
+
+Directory Walk (powerful for DevOps)
+------------------------------------
+
+import os; print([f for r,d,files in os.walk(".") for f in files])
+import os; [print(os.path.join(r,f)) for r,_,files in os.walk(".") for f in files]
+
+*************************************************************
+
+Disk & Path Utilities
+----------------------
+
+
+One-Liners
+-----------
+import os; print(os.stat("file.txt"))
+import os; print(os.path.abspath("file.txt"))
+import os; print(os.path.expanduser("~"))
+
+import os; print([f for f in os.listdir(".") if f.endswith(".log")])
+import os; print(sum(os.path.getsize(f) for f in os.listdir(".") if os.path.isfile(f)))
+import os; print([d for d in os.listdir(".") if os.path.isdir(d)])
+import os; print(os.system("systemctl status sshd"))
+``
+
+
