@@ -1,0 +1,176 @@
+Here you go ✅ — **Subprocess module one-liners** in the same style as your OS module list 👇
+
+***
+
+# 🐍 Python `subprocess` Module
+
+***
+
+## ✅ Basic Command Execution
+
+***
+
+```python
+import subprocess; subprocess.run(["ls"])
+```
+
+```python
+import subprocess; subprocess.run(["pwd"])
+```
+
+```python
+import subprocess; subprocess.run(["whoami"])
+```
+
+***
+
+## ✅ Capture Command Output
+
+***
+
+```python
+import subprocess; result = subprocess.run(["date"], capture_output=True, text=True); print(result.stdout)
+```
+
+```python
+import subprocess; print(subprocess.run(["hostname"], capture_output=True, text=True).stdout)
+```
+
+```python
+import subprocess; output = subprocess.check_output(["uptime"], text=True); print(output)
+```
+
+***
+
+## ✅ Run Shell Commands
+
+***
+
+```python
+import subprocess; subprocess.run("echo Hello World", shell=True)
+```
+
+```python
+import subprocess; subprocess.run("ls -l /tmp", shell=True)
+```
+
+***
+
+## ✅ Check Command Status (Return Code)
+
+***
+
+```python
+import subprocess; result = subprocess.run(["ls"]); print(result.returncode)
+```
+
+```python
+import subprocess; print(subprocess.run(["false"]).returncode)
+```
+
+***
+
+## ✅ Error Handling
+
+***
+
+```python
+import subprocess; subprocess.run(["ls", "/wrongpath"], check=True)
+```
+
+```python
+import subprocess; 
+try: subprocess.run(["ls","/no-dir"], check=True)
+except subprocess.CalledProcessError: print("Command failed")
+```
+
+***
+
+## ✅ Input to Command
+
+***
+
+```python
+import subprocess; subprocess.run(["cat"], input="hello\n", text=True)
+```
+
+```python
+import subprocess; p = subprocess.run(["grep","hello"], input="hello world", text=True, capture_output=True); print(p.stdout)
+```
+
+***
+
+## ✅ Redirect Output (stdout/stderr)
+
+***
+
+```python
+import subprocess; subprocess.run(["ls"], stdout=subprocess.PIPE)
+```
+
+```python
+import subprocess; subprocess.run(["ls","/wrong"], stderr=subprocess.PIPE)
+```
+
+```python
+import subprocess; result = subprocess.run(["ls"], stdout=subprocess.PIPE, text=True); print(result.stdout)
+```
+
+***
+
+## ✅ Background / Async Process
+
+***
+
+```python
+import subprocess; subprocess.Popen(["sleep","5"])
+```
+
+```python
+import subprocess; p = subprocess.Popen(["ls"]); p.wait()
+```
+
+***
+
+## ✅ Pipe Between Commands
+
+***
+
+```python
+import subprocess; p1 = subprocess.Popen(["ls"], stdout=subprocess.PIPE); p2 = subprocess.Popen(["grep","py"], stdin=p1.stdout, stdout=subprocess.PIPE); print(p2.communicate()[0].decode())
+```
+
+***
+
+## ✅ DevOps Useful Examples
+
+***
+
+```python
+import subprocess; print(subprocess.run(["systemctl","status","sshd"], capture_output=True, text=True).stdout)
+```
+
+```python
+import subprocess; print(subprocess.check_output(["kubectl","get","pods"], text=True))
+```
+
+```python
+import subprocess; subprocess.run(["docker","ps"])
+```
+
+```python
+import subprocess; subprocess.run(["curl","-I","https://google.com"])
+```
+
+***
+
+# 🔥 Quick Key Functions
+
+* `subprocess.run()` → run command
+* `subprocess.check_output()` → get output
+* `subprocess.Popen()` → advanced/background process
+* `capture_output=True` → capture stdout/stderr
+* `check=True` → throw error if fails
+
+***
+
