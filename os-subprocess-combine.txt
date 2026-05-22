@@ -1,0 +1,208 @@
+Perfect 🔥 — this is exactly the kind of **interview + real DevOps scripting set** you should master.
+
+Below are **Top 20 real DevOps scripts** combining ✅ `os` + ✅ `subprocess` (one‑liner style, practical use cases)
+
+***
+
+# 🐍 Top 20 DevOps Scripts (os + subprocess)
+
+***
+
+## ✅ 1. Check current working directory
+
+```python
+import os, subprocess; print(os.getcwd())
+```
+
+***
+
+## ✅ 2. List files and also run `ls -l`
+
+```python
+import os, subprocess; print(os.listdir(".")); subprocess.run(["ls","-l"])
+```
+
+***
+
+## ✅ 3. Check disk usage
+
+```python
+import subprocess; print(subprocess.check_output(["df","-h"], text=True))
+```
+
+***
+
+## ✅ 4. Check memory usage
+
+```python
+import subprocess; print(subprocess.check_output(["free","-m"], text=True))
+```
+
+***
+
+## ✅ 5. Check CPU load
+
+```python
+import subprocess; print(subprocess.check_output(["uptime"], text=True))
+```
+
+***
+
+## ✅ 6. Check if a service is running
+
+```python
+import subprocess; print(subprocess.run(["systemctl","is-active","sshd"], capture_output=True, text=True).stdout)
+```
+
+***
+
+## ✅ 7. Restart a service
+
+```python
+import subprocess; subprocess.run(["systemctl","restart","sshd"])
+```
+
+***
+
+## ✅ 8. Create directory if not exists
+
+```python
+import os; os.makedirs("/tmp/devops_dir", exist_ok=True)
+```
+
+***
+
+## ✅ 9. Delete old logs
+
+```python
+import os, subprocess; subprocess.run("find /var/log -mtime +7 -delete", shell=True)
+```
+
+***
+
+## ✅ 10. Check open ports
+
+```python
+import subprocess; print(subprocess.check_output(["ss","-tuln"], text=True))
+```
+
+***
+
+## ✅ 11. Verify file exists and show details
+
+```python
+import os, subprocess; f="/etc/passwd"; print(os.path.exists(f)); subprocess.run(["ls","-l",f])
+```
+
+***
+
+## ✅ 12. Backup a file
+
+```python
+import subprocess; subprocess.run(["cp","/etc/passwd","/tmp/passwd.bak"])
+```
+
+***
+
+## ✅ 13. Get hostname and IP
+
+```python
+import os, subprocess; print(os.uname().nodename); print(subprocess.check_output(["hostname","-I"], text=True))
+```
+
+***
+
+## ✅ 14. Monitor running processes
+
+```python
+import subprocess; print(subprocess.check_output(["ps","-ef"], text=True))
+```
+
+***
+
+## ✅ 15. Kill a process
+
+```python
+import subprocess; subprocess.run(["pkill","nginx"])
+```
+
+***
+
+## ✅ 16. Pull latest code from Git
+
+```python
+import subprocess; subprocess.run(["git","pull"])
+```
+
+***
+
+## ✅ 17. Check Docker containers
+
+```python
+import subprocess; subprocess.run(["docker","ps"])
+```
+
+***
+
+## ✅ 18. Check Kubernetes pods
+
+```python
+import subprocess; print(subprocess.check_output(["kubectl","get","pods"], text=True))
+```
+
+***
+
+## ✅ 19. Test website availability
+
+```python
+import subprocess; print(subprocess.run(["curl","-Is","https://google.com"], capture_output=True, text=True).stdout.split("\n")[0])
+```
+
+***
+
+## ✅ 20. Change directory and deploy script
+
+```python
+import os, subprocess; os.chdir("/app"); subprocess.run(["sh","deploy.sh"])
+```
+
+***
+
+# 🔥 Bonus (Important Pattern for Interviews)
+
+## ✅ Check command success + output
+
+```python
+import subprocess; r=subprocess.run(["ls"], capture_output=True, text=True); print(r.stdout if r.returncode==0 else "Failed")
+```
+
+***
+
+# 🎯 What You Learned (Very Important)
+
+These scripts cover:
+
+* ✅ System monitoring (CPU, memory, disk)
+* ✅ Service management (systemctl)
+* ✅ File operations (os + subprocess)
+* ✅ DevOps tools (git, docker, kubectl)
+* ✅ Networking checks (ports, curl)
+* ✅ Automation patterns
+
+***
+
+# 🚀 Pro Tip (High Interview Value)
+
+Always remember:
+
+* Use `os` → for **file/system operations**
+* Use `subprocess` → for **Linux commands & automation**
+
+👉 Real DevOps scripts = **combination of both**
+
+***
+
+If you want next level 🚀  
+I can give you:  
+✅ Full **project-based scripts (like Nagios plugins, health checks)**  
+✅ Or convert these into **production-ready monitoring scripts with alerts**
