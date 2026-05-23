@@ -1,9 +1,10 @@
 ## Core System & Automation
 
-* `os`
-* `sys`
-* `subprocess`
-* `shutil`
+* `os`      cpu_count, cpu_getloadavg, system
+* `sys`      for handling warning crtitical error
+* `subprocess` commands
+* `shutil`    disk usage
+  `psutil`
 * `pathlib`
 * `argparse`
 
