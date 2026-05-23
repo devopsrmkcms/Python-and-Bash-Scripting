@@ -21,9 +21,9 @@ Service Management (11-20)
 19.	Jenkins job status checker
 20.	Cron job execution monitor
 System Resources (21-30)
-21.	Disk usage threshold alert
-22.	Memory usage percentage
-23.	CPU per-core utilization
+21.	Disk usage threshold alert        #done
+22.	Memory usage percentage           #done
+23.	CPU per-core utilization          #done
 24.	Top CPU consuming processes
 25.	Load average tracker
 26.	Listening ports inventory
