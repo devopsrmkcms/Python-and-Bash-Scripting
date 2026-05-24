@@ -1,0 +1,117 @@
+Here are **simple commands to list Python modules** (you should know all 3 👇)
+
+***
+
+# ✅ 1. List all installed modules (BEST)
+
+```bash
+pip list
+```
+
+👉 Shows:
+
+* Installed packages
+* Version also
+
+***
+
+# ✅ 2. Only module names (clean output)
+
+```bash
+pip list --format=freeze
+```
+
+👉 Output:
+
+```
+psutil==5.x
+requests==2.x
+pandas==2.x
+```
+
+***
+
+# ✅ 3. Using Python (important ✅)
+
+```bash
+python -m pip list
+```
+
+👉 Useful when:
+
+* Multiple Python versions (3.8, 3.9, 3.12)
+
+***
+
+# ✅ 4. Show ALL importable modules (advanced)
+
+```bash
+python -c "help('modules')"
+```
+
+👉 Shows:
+
+* All built-in modules
+* Installed modules
+
+⚠️ Output = very big
+
+***
+
+# ✅ 5. From inside Python
+
+```python
+import pkgutil
+
+for m in pkgutil.iter_modules():
+    print(m.name)
+```
+
+👉 Clean way to list modules programmatically
+
+***
+
+# ✅ 6. Check specific module
+
+```bash
+pip show psutil
+```
+
+👉 Shows:
+
+* version
+* location
+* dependencies
+
+***
+
+# 🧠 Important understanding
+
+| Command           | What it shows                     |
+| ----------------- | --------------------------------- |
+| `pip list`        | Installed modules ✅               |
+| `help('modules')` | All modules (builtin + installed) |
+| `pkgutil`         | Programmatic list                 |
+
+***
+
+# ✅ 🚀 What YOU should use daily
+
+👉 For DevOps:
+
+```
+pip list
+pip show <module>
+```
+
+***
+
+# ✅ One-line takeaway
+
+> Use `pip list` for installed modules, and `help('modules')` if you want everything.
+
+***
+
+If you want, next:
+✅ I can show how to **find documentation of any module directly from terminal**  
+✅ Or how to **inspect module functions without internet (very useful in servers)**
