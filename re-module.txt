@@ -1,0 +1,295 @@
+Perfect 👍 — this is a **very important module for DevOps + interviews**.  
+I’ll teach you **`re` module (regex)** in a **simple, practical, hands-on way** so you can *write without memorizing*.
+
+***
+
+# ✅ ✅ What is `re` module?
+
+👉 `re` = **Regular Expressions**
+
+👉 Used for:
+
+* Log parsing ✅ (VERY IMPORTANT DevOps)
+* Extract IP / URL / Error messages
+* Validation (email, hostname, etc.)
+
+***
+
+# ✅ ✅ 1. Most Important Functions
+
+```python
+import re
+```
+
+### ✅ 1. match()
+
+```python
+re.match(pattern, string)
+```
+
+👉 Checks **only at beginning**
+
+***
+
+### ✅ 2. search()
+
+```python
+re.search(pattern, string)
+```
+
+👉 Finds **first occurrence anywhere**
+
+***
+
+### ✅ 3. findall()
+
+```python
+re.findall(pattern, string)
+```
+
+👉 Returns **all matches (list)**
+
+***
+
+### ✅ 4. finditer()
+
+```python
+re.finditer(pattern, string)
+```
+
+👉 Returns iterator (use for big logs)
+
+***
+
+### ✅ 5. sub()
+
+```python
+re.sub(pattern, replace, string)
+```
+
+👉 Replace text
+
+***
+
+# ✅ ✅ 2. Basic Patterns (VERY IMPORTANT)
+
+| Pattern | Meaning                  |
+| ------- | ------------------------ |
+| `.`     | any character            |
+| `\d`    | digit (0-9)              |
+| `\w`    | word (a-z, A-Z, 0-9, \_) |
+| `\s`    | space                    |
+| `^`     | start                    |
+| `$`     | end                      |
+| `+`     | one or more              |
+| `*`     | zero or more             |
+| `?`     | optional                 |
+| `{n}`   | exact times              |
+| `{n,m}` | range                    |
+
+***
+
+# ✅ ✅ 3. Small Programs (Learn by Doing)
+
+***
+
+## ✅ Example 1: Find numbers in string
+
+```python
+import re
+
+data = "CPU usage is 85 percent and memory 70"
+
+numbers = re.findall(r"\d+", data)
+
+print(numbers)
+```
+
+✅ Output:
+
+```
+['85', '70']
+```
+
+***
+
+## ✅ Example 2: Extract IP address
+
+```python
+import re
+
+log = "client connected from 192.168.1.10"
+
+ip = re.search(r"\d+\.\d+\.\d+\.\d+", log)
+
+print(ip.group())
+```
+
+✅ Output:
+
+```
+192.168.1.10
+```
+
+***
+
+## ✅ Example 3: Check if string starts with "ERROR"
+
+```python
+import re
+
+line = "ERROR: disk full"
+
+if re.match(r"ERROR", line):
+    print("Error found")
+```
+
+***
+
+## ✅ Example 4: Replace spaces with dash
+
+```python
+import re
+
+text = "hello world devops"
+
+new = re.sub(r"\s+", "-", text)
+
+print(new)
+```
+
+✅ Output:
+
+```
+hello-world-devops
+```
+
+***
+
+## ✅ Example 5: Extract emails
+
+```python
+import re
+
+data = "contact: test@gmail.com and admin@yahoo.com"
+
+emails = re.findall(r"\S+@\S+", data)
+
+print(emails)
+```
+
+***
+
+## ✅ Example 6: Parse log file (DevOps)
+
+```python
+import re
+
+log = "ERROR 2026-05-26 Disk usage 90% on server1"
+
+match = re.search(r"Disk usage (\d+)%", log)
+
+if match:
+    print(match.group(1))
+```
+
+✅ Output:
+
+```
+90
+```
+
+***
+
+# ✅ ✅ 4. Groups (VERY IMPORTANT)
+
+```python
+import re
+
+data = "CPU: 75%"
+
+match = re.search(r"(\w+): (\d+)%", data)
+
+print(match.group(1))  # CPU
+print(match.group(2))  # 75
+```
+
+***
+
+# ✅ ✅ 5. Real DevOps Example (Log Parsing)
+
+```python
+import re
+
+logs = [
+    "INFO 192.168.1.10 connected",
+    "ERROR 10.0.0.5 timeout",
+]
+
+for line in logs:
+    ip = re.search(r"\d+\.\d+\.\d+\.\d+", line)
+
+    if ip:
+        print(f"IP Found: {ip.group()}")
+```
+
+***
+
+# ✅ ✅ Your Mental Model (Very Important)
+
+```
+pattern + function = result
+
+1. write pattern (what to search)
+2. choose function (search/findall)
+3. extract using group()
+4. use result
+```
+
+***
+
+# ✅ ✅ Interview Focus Points
+
+✅ Difference:
+
+* `match()` → start only
+* `search()` → anywhere
+* `findall()` → all matches
+
+✅ Always use:
+
+```python
+r"pattern"
+```
+
+👉 raw string (avoid escape issues)
+
+***
+
+# ✅ ✅ Most Useful DevOps Patterns
+
+### ✅ IP address
+
+```python
+r"\d+\.\d+\.\d+\.\d+"
+```
+
+### ✅ Number
+
+```python
+r"\d+"
+```
+
+### ✅ Log level
+
+```python
+r"ERROR|WARNING|INFO"
+```
+
+### ✅ Percentage
+
+```python
+r"\d+%"
+```
+
+***
