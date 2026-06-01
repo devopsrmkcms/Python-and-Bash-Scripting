@@ -53,5 +53,14 @@ Automation & Backup (41-50)
 48.	Slack/Teams notifier
 49.	CSV health report generator
 50.	JSON metrics exporter
+31.	Log file tail follower				---> done
+32.	Failed login attempts counter			---> done
+33.	404 error log analyzer				---> done		
+35.	Log rotation status check			--->
+36.	Auditd events monitor				--->
+37.	Firewall rules validator			--->
+38.	SELinux status checker				--->
+39.	SSH authorized_keys checker			--->
+40.	Suspicious process detector
 
 
