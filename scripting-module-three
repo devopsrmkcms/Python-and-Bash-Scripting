@@ -1,0 +1,11 @@
+System Resources (21-30)
+21.	Disk usage threshold alert        #done
+22.	Memory usage percentage           #done
+23.	CPU per-core utilization          #done
+24.	Top CPU consuming processes
+25.	Load average tracker
+26.	Listening ports inventory
+27.	Active network connections
+28.	CPU temperature monitor
+29.	Swap usage alert
+30.	Inode usage checker
