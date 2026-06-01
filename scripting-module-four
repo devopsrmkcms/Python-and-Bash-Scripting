@@ -1,0 +1,11 @@
+Log & Security (31-40)
+31.	Log file tail follower
+32.	Failed login attempts counter
+33.	404 error log analyzer
+34.	Security events scanner
+35.	Log rotation status check
+36.	Auditd events monitor
+37.	Firewall rules validator
+38.	SELinux status checker
+39.	SSH authorized_keys checker
+40.	Suspicious process detector
