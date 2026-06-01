@@ -1,0 +1,11 @@
+Service Management (11-20)
+11.	Single systemd service status			          #done
+12.	Multiple services status check			        #done
+13.	Service status CLI (argparse)			          #done
+14.	Multi-service CLI monitor			              #done
+15.	Failed service auto-restart			            #done
+16.	Service restart + notification
+17.	Docker container health check
+18.	K8s pod status summary
+19.	Jenkins job status checker
+20.	Cron job execution monitor
