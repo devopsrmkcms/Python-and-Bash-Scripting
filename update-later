@@ -1,0 +1,123 @@
+Paramiko (1–8)
+
+SSH multi-server command executor
+Remote log collector via SSH
+SSH-based service status checker
+Remote disk usage collector
+SSH automated patch trigger
+Remote file upload tool
+SSH user last-login checker
+SSH config backup tool
+
+
+re (Regex) (9–14)
+
+Log error pattern extractor
+IP address parser from logs
+Email extractor from files
+Apache log analyzer
+Password policy validator
+Config file parser using regex
+
+
+Fabric (15–20)
+
+Multi-server deployment tool
+Remote service restart automation
+Rolling restart across nodes
+Bulk file distribution tool
+Remote command orchestration
+Infrastructure bootstrap script
+
+
+json (21–25)
+
+JSON config validator
+API response parser tool
+JSON to CSV converter
+JSON merge utility
+Nested JSON extractor
+
+
+configparser (26–30)
+
+INI config reader tool
+Dynamic config updater
+Multi-env config loader
+Service config validator
+Config diff checker
+
+
+logging (31–35)
+
+Centralized logging setup script
+Rotating log file manager
+Structured logging formatter (JSON logs)
+Multi-level logging example (DEBUG/INFO/ERROR)
+Logging wrapper for monitoring scripts
+
+
+secrets (36–38)
+
+Secure password generator
+Token generator for APIs
+Random key generator for encryption
+
+
+boto3 (IMPORTANT) (39–60)
+
+EC2 instance status checker
+EC2 start/stop automation
+EBS snapshot creator
+S3 bucket file uploader
+S3 bucket cleanup script
+IAM user auditor
+IAM access key rotator
+CloudWatch metrics fetcher
+CloudWatch alarm creator
+Lambda deploy script
+VPC resource inventory
+Security group audit tool
+RDS snapshot backup script
+Auto-scaling group status checker
+Cost usage fetcher
+ELB health checker
+ECR image cleanup
+S3 public access scanner
+AWS config compliance checker
+EC2 tag enforcement script
+Route53 DNS checker
+AWS backup validation script
+
+
+azure-mgmt (IMPORTANT) (61–75)
+
+Azure VM status checker
+VM start/stop automation
+Resource group inventory
+Azure disk snapshot tool
+Azure storage upload script
+Azure cost usage fetcher
+NSG (network security group) audit
+Azure VM scale set checker
+Azure monitoring metrics fetcher
+Azure alert rule creator
+Azure tag compliance script
+Azure backup status checker
+Azure load balancer health check
+Azure DNS record checker
+Azure resource cleanup script
+
+
+kubernetes (76–85)
+
+Pod status checker
+Namespace resource usage report
+Crashloop pod detector
+Deployment rollout checker
+Service endpoint validator
+ConfigMap/secret reader
+Node health monitor
+PVC usage checker
+K8s event analyzer
+Auto-heal failing pods
