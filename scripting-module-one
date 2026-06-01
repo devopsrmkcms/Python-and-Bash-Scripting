@@ -2,9 +2,9 @@ HTTP & Network Monitoring (1-10)
 1.	Single URL HTTP status checker	                #1-06	        		
 2.	Multiple URLs health monitor          	        #1-06
 3.	URL checker with argparse (single)	            #1-06      		
-4.	Multi-URL CLI tool with argparse	              #1-06	       		
-5.	Website title extractor				              	
-6.	SSL certificate expiry checker			        	
+4.	Multi-URL CLI tool with argparse	             #1-06	       		
+5.	Website title extractor			                    #1-06	              	
+6.	SSL certificate expiry checker	                #1-06       	
 7.	HTTP response time measurer			            	
 8.	Bulk ping health checker			              	
 9.	TCP port connectivity tester			          	
