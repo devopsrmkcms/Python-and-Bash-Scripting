@@ -1,0 +1,260 @@
+Here’s a **DevOps-focused, interview + scripting cheat sheet** of the **most important socket module operations/methods**, with **minimal examples** (copy‑paste ready).
+
+***
+
+# 🔥 Python `socket` Module – Important Methods Cheat Sheet
+
+***
+
+## ✅ 1. Create Socket
+
+```python
+import socket
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+```
+
+* `AF_INET` → IPv4
+* `SOCK_STREAM` → TCP
+* `SOCK_DGRAM` → UDP
+
+***
+
+## ✅ 2. Set Timeout
+
+```python
+sock.settimeout(5)
+```
+
+👉 Prevents hanging scripts (very important in monitoring)
+
+***
+
+## ✅ 3. Connect to Server (Client)
+
+```python
+sock.connect(("google.com", 80))
+```
+
+***
+
+## ✅ 4. Connect with Return Code (Best for DevOps)
+
+```python
+result = sock.connect_ex(("google.com", 80))
+
+if result == 0:
+    print("Connected")
+else:
+    print("Failed")
+```
+
+👉 Used in **Nagios / health checks**
+
+***
+
+## ✅ 5. Bind (Server Side)
+
+```python
+sock.bind(("0.0.0.0", 8080))
+```
+
+👉 Attach socket to IP & port
+
+***
+
+## ✅ 6. Listen (Server Mode)
+
+```python
+sock.listen(5)
+```
+
+👉 Allows incoming connections  
+`5` = backlog queue
+
+***
+
+## ✅ 7. Accept Connection
+
+```python
+conn, addr = sock.accept()
+print(f"Connected from {addr}")
+```
+
+***
+
+## ✅ 8. Send Data
+
+```python
+sock.send(b"Hello")
+```
+
+OR
+
+```python
+sock.sendall(b"Hello World")
+```
+
+👉 `sendall()` ensures full data sent ✅
+
+***
+
+## ✅ 9. Receive Data
+
+```python
+data = sock.recv(1024)
+print(data.decode())
+```
+
+***
+
+## ✅ 10. Close Socket
+
+```python
+sock.close()
+```
+
+👉 Always clean up resources (important in production)
+
+***
+
+## ✅ 11. Get Hostname (Local Machine)
+
+```python
+host = socket.gethostname()
+print(host)
+```
+
+***
+
+## ✅ 12. Resolve Domain → IP
+
+```python
+ip = socket.gethostbyname("google.com")
+print(ip)
+```
+
+***
+
+## ✅ 13. Get All IPs (Advanced DNS)
+
+```python
+info = socket.getaddrinfo("google.com", 80)
+
+for i in info:
+    print(i[4])
+```
+
+***
+
+## ✅ 14. Reverse DNS (IP → Domain)
+
+```python
+name = socket.gethostbyaddr("8.8.8.8")
+print(name)
+```
+
+***
+
+## ✅ 15. UDP Socket Example
+
+```python
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.sendto(b"Hello", ("127.0.0.1", 9999))
+```
+
+***
+
+## ✅ 16. Shutdown Connection
+
+```python
+sock.shutdown(socket.SHUT_RDWR)
+```
+
+👉 Gracefully close before `.close()`
+
+***
+
+## ✅ 17. Reuse Port (Important for Servers)
+
+```python
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+```
+
+***
+
+## ✅ 18. Get Socket Info
+
+```python
+print(sock.getsockname())  # local address
+print(sock.getpeername())  # remote address
+```
+
+***
+
+# 🧠 DevOps Use Case Mapping
+
+| Task               | Method                           |
+| ------------------ | -------------------------------- |
+| TCP port check     | `connect_ex()`                   |
+| DNS check          | `gethostbyname()`                |
+| Reverse lookup     | `gethostbyaddr()`                |
+| Monitoring scripts | `settimeout()`                   |
+| Server creation    | `bind()`, `listen()`, `accept()` |
+| Data transfer      | `send()`, `recv()`               |
+
+***
+
+# ✅ Mini Real DevOps Script Example
+
+```python
+import socket
+
+host = "google.com"
+port = 443
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.settimeout(3)
+
+result = sock.connect_ex((host, port))
+
+if result == 0:
+    print("OK - Service reachable")
+else:
+    print("CRITICAL - Service down")
+
+sock.close()
+```
+
+***
+
+# 🔥 Important Interview Points
+
+✅ `connect()` vs `connect_ex()`
+
+* `connect()` → throws exception
+* `connect_ex()` → returns error code ✅ (preferred in scripts)
+
+✅ `send()` vs `sendall()`
+
+* `send()` → partial send
+* `sendall()` → full data ✅
+
+✅ Always use:
+
+```
+settimeout + close
+```
+
+***
+
+# ⚡ One-Line Memory Trick
+
+```
+socket → settimeout → connect_ex → recv/send → close
+```
+
+***
+
+If you want next level:
+👉 I can give **50 real DevOps socket script ideas** (TCP scanner, health checker, service validator, etc.) tailored for your learning roadmap.
