@@ -1,0 +1,260 @@
+Perfect 👍 — this is exactly what you need for **deep learning + DevOps scripting mastery**.
+
+I’ve built a **MASTER SOCKET SCRIPT** that includes:
+
+* ✅ TCP client (connect, send, recv)
+* ✅ UDP example
+* ✅ DNS resolution
+* ✅ Reverse DNS
+* ✅ Server (bind, listen, accept)
+* ✅ Socket options
+* ✅ Timeout, shutdown, close
+* ✅ connect\_ex (monitoring style)
+
+👉 **Copy-paste this and practice line by line**
+
+***
+
+# 🔥 MASTER SOCKET SCRIPT (All Important Operations)
+
+```python
+#!/usr/bin/env python3
+
+import socket
+import sys
+
+# ==============================
+# CONFIG
+# ==============================
+HOST = "google.com"
+PORT = 80
+TIMEOUT = 3
+
+
+# ==============================
+# DNS OPERATIONS
+# ==============================
+def dns_operations():
+    print("\n--- DNS OPERATIONS ---")
+
+    # Domain → IP
+    ip = socket.gethostbyname(HOST)
+    print(f"[DNS] {HOST} → {ip}")
+
+    # All IPs
+    info = socket.getaddrinfo(HOST, PORT)
+    print("[ADDRINFO]")
+    for i in info:
+        print(i[4])
+
+    # Reverse DNS
+    try:
+        name = socket.gethostbyaddr(ip)
+        print(f"[Reverse DNS] {ip} → {name[0]}")
+    except Exception:
+        print("[Reverse DNS] Not available")
+
+
+# ==============================
+# TCP CLIENT (DevOps style)
+# ==============================
+def tcp_client():
+    print("\n--- TCP CLIENT CHECK ---")
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    # Socket options
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+    # Timeout
+    sock.settimeout(TIMEOUT)
+
+    # Connect using connect_ex (monitoring)
+    result = sock.connect_ex((HOST, PORT))
+
+    if result == 0:
+        print(f"[OK] Connected to {HOST}:{PORT}")
+
+        # Send HTTP request
+        request = b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n"
+        sock.sendall(request)
+
+        # Receive data
+        data = sock.recv(1024)
+        print(f"[RESPONSE]\n{data.decode(errors='ignore')}")
+
+        # Socket info
+        print(f"[LOCAL] {sock.getsockname()}")
+        print(f"[REMOTE] {sock.getpeername()}")
+
+        # Graceful shutdown
+        sock.shutdown(socket.SHUT_RDWR)
+
+    else:
+        print(f"[CRITICAL] Connection failed")
+
+    sock.close()
+
+
+# ==============================
+# UDP CLIENT EXAMPLE
+# ==============================
+def udp_client():
+    print("\n--- UDP CLIENT ---")
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+    message = b"Hello UDP"
+    sock.sendto(message, ("127.0.0.1", 9999))
+
+    print("[UDP] Packet sent")
+
+    sock.close()
+
+
+# ==============================
+# SIMPLE TCP SERVER
+# ==============================
+def tcp_server():
+    print("\n--- SIMPLE TCP SERVER (run separately if needed) ---")
+
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    # Reuse port
+    server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+    server.bind(("0.0.0.0", 8080))
+    server.listen(5)
+
+    print("[SERVER] Listening on port 8080...")
+
+    conn, addr = server.accept()
+    print(f"[SERVER] Connection from {addr}")
+
+    data = conn.recv(1024)
+    print(f"[SERVER RECEIVED] {data}")
+
+    conn.sendall(b"Hello from server")
+
+    conn.close()
+    server.close()
+
+
+# ==============================
+# MAIN
+# ==============================
+def main():
+    dns_operations()
+    tcp_client()
+    udp_client()
+
+    # Uncomment to run server (run separately)
+    # tcp_server()
+
+
+if __name__ == "__main__":
+    main()
+```
+
+***
+
+# 🧠 What You Learned from This Script
+
+## ✅ Core Flow (VERY IMPORTANT)
+
+```
+socket → settimeout → connect/connect_ex → send/recv → shutdown → close
+```
+
+***
+
+## ✅ Methods Covered
+
+| Category | Methods                                         |
+| -------- | ----------------------------------------------- |
+| DNS      | `gethostbyname`, `getaddrinfo`, `gethostbyaddr` |
+| Client   | `socket`, `connect_ex`, `sendall`, `recv`       |
+| Server   | `bind`, `listen`, `accept`                      |
+| Control  | `settimeout`, `setsockopt`, `shutdown`          |
+| Info     | `getsockname`, `getpeername`                    |
+| UDP      | `sendto`                                        |
+
+***
+
+## ✅ How to Practice (VERY IMPORTANT)
+
+### 1. Run Client
+
+```bash
+python3 script.py
+```
+
+***
+
+### 2. Test Server (in 2 terminals)
+
+#### Terminal 1:
+
+```bash
+python3 script.py
+```
+
+(uncomment `tcp_server()`)
+
+#### Terminal 2:
+
+```bash
+nc localhost 8080
+```
+
+***
+
+### 3. Test UDP
+
+```bash
+nc -u -l 9999
+```
+
+***
+
+# 🔥 DevOps Use Cases (You should remember)
+
+| Feature        | Real Use                   |
+| -------------- | -------------------------- |
+| `connect_ex()` | Nagios health check        |
+| DNS functions  | URL monitoring             |
+| TCP client     | API/port validation        |
+| Server         | internal tools / testing   |
+| UDP            | syslog / monitoring agents |
+
+***
+
+# ⚡ Interview Killer Points
+
+✅ Why `connect_ex`?
+
+> Returns code instead of exception → best for monitoring
+
+✅ Why `settimeout`?
+
+> Prevents hanging scripts
+
+✅ Why `SO_REUSEADDR`?
+
+> Restart server without waiting
+
+✅ Why `shutdown()`?
+
+> Graceful close before terminate
+
+***
+
+# 🔥 If You Want Next Level
+
+I can now build for you:
+
+✅ Production Nagios Plugin (DNS + TCP + SSL expiry)  
+✅ Multi-threaded port scanner  
+✅ Full network diagnostic tool (like mini nmap)
+
+Just tell 👍
