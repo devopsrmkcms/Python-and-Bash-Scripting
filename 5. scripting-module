@@ -1,11 +1,10 @@
-Automation & Backup (41-50)
-41.	Rsync backup with progress
-42.	Directory sync monitor
-43.	Database backup verifier
-44.	Git repository updater
-45.	Package update checker
-46.	Health check dashboard
-47.	Alert email sender
-48.	Slack/Teams notifier
-49.	CSV health report generator
-50.	JSON metrics exporter
+41. Rsync backup with progress           -- subprocess, sys
+42. Directory sync monitor               -- os, filecmp / hashlib, sys
+43. Database backup verifier             -- subprocess (mysqldump/pg_dump), os, sys
+44. Git repository updater               -- subprocess (git), sys
+45. Package update checker               -- subprocess (yum/apt/dnf), sys
+46. Health check dashboard               -- flask / http.server, json, sys
+47. Alert email sender                   -- smtplib, email, sys
+48. Slack/Teams notifier                 -- requests, sys
+49. CSV health report generator          -- csv, sys
+50. JSON metrics exporter                -- json, sys
