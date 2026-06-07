@@ -6,7 +6,7 @@
 16. Service restart + notification         -- subprocess, smtplib / requests (webhook), sys
 17. Docker container health check          -- docker SDK / subprocess, sys
 18. K8s pod status summary                 -- kubernetes client / subprocess (kubectl), sys
-19. Jenkins job status checker             -- requests, sys
+19. --> Jenkins job status checker             -- requests, sys ####################
 20. Cron job execution monitor             -- os / subprocess, datetime, sys
 =================================================================================
 -> retyr login in script
