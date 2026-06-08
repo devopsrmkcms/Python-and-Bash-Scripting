@@ -1,7 +1,0 @@
-configparser (26–30)
-
-INI config reader tool
-Dynamic config updater
-Multi-env config loader
-Service config validator
-Config diff checker
