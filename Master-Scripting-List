@@ -1,233 +1,147 @@
-🌐 1. NETWORK + HTTP + CONNECTIVITY SCRIPTS
-Modules: requests, socket, subprocess, time, sys, ssl, datetime, argparse
-✅ Scripts
 
-Single URL HTTP status checker
-Multiple URLs health monitor
-URL checker with argparse (single)
-Multi-URL CLI tool with argparse
-Website title extractor
-SSL certificate expiry checker
-HTTP response time measurer
-Bulk ping health checker
-TCP port connectivity tester
-DNS resolution monitor
+1. Single URL HTTP status checker
+2. Multiple URLs health monitor
+3. URL checker with argparse (single)
+4. Multi-URL CLI tool with argparse
+5. Website title extractor
+6. SSL certificate expiry checker
+7. HTTP response time measurer
+8. Bulk ping health checker
+9. TCP port connectivity tester
+10. DNS resolution monitor
+11. Single systemd service status
+12. Multiple services status check
+13. Service status CLI (argparse)
+14. Multi-service CLI monitor
+15. Failed service auto-restart
+16. Service restart + notification
+17. Docker container health check
+18. K8s pod status summary
+19. Cron job execution monitor
+20. Disk usage threshold alert
+21. Memory usage percentage
+22. Load average tracker
+23. Listening ports inventory
+24. Active network connections
+25. Swap usage alert
+26. Inode usage checker
+27. Log file tail follower
+28. Failed login attempts counter
+29. 404 error log analyzer
+30. Security events scanner
+31. Log rotation status check
+32. Auditd events monitor
+33. Firewall rules validator
+34. SELinux status checker
+35. SSH authorized\_keys checker
+36. Suspicious process detector
+37. Rsync backup with progress
+38. Directory sync monitor
+39. Database backup verifier
+40. Git repository updater
+41. Package update checker
+42. Health check dashboard
+43. Alert email sender
+44. Slack/Teams notifier
+45. CSV health report generator
+46. JSON metrics exporter
+47. Log error pattern extractor
+48. IP address parser from logs
+49. Email extractor from files
+50. Apache log analyzer
+51. Password policy validator
+52. Config file parser using regex
+53. INI config reader tool
+54. Dynamic config updater
+55. Multi-env config loader
+56. Service config validator
+57. Config diff checker
+58. API health checker
+59. Fetch weather API data
+60. Push monitoring data to API endpoint
+61. GitHub repo status checker
+62. Kubernetes API pod fetcher
+63. Slack webhook notifier
+64. REST API tester (GET/POST/DELETE)
+65. Retry API calls on failure
+66. JWT authentication client
+67. CLI API client tool
+68. Log API failures
+69. System monitoring logger
+70. Script execution logger
+71. Error tracking system
+72. Log rotation handler
+73. Multi-level logging system
+74. Central log collector simulation
+75. CLI activity logger
+76. Debug logger (replace print)
+77. Alert logging system
+78. Server health report CSV
+79. AWS inventory CSV exporter
+80. Process list to CSV
+81. CSV → JSON converter
+82. User login tracker CSV
+83. Failed login CSV report
+84. Disk usage CSV report
+85. CSV validation tool
+86. Email list manager CSV
+87. Multi-server CSV report
+88. JSON log parser
+89. JSON → CSV converter
+90. API response analyzer
+91. JSON config validator
+92. JSON merger tool
+93. JSON diff checker
+94. YAML → JSON converter
+95. JSON monitoring output
+96. System metrics JSON logger
+97. JSON key-value DB
+98. EC2 instance status checker
+99. EC2 start/stop automation
+100. EBS snapshot creator
+101. S3 bucket uploader
+102. S3 cleanup script
+103. IAM user auditor
+104. IAM key rotator
+105. CloudWatch metrics fetcher
+106. Alarm creator
+107. Lambda deploy script
+108. VPC inventory tool
+109. Security group audit
+110. RDS backup script
+111. Auto-scaling group checker
+112. Cost usage fetcher
+113. ELB health checker
+114. ECR cleanup tool
+115. S3 public access scanner
+116. Compliance checker
+117. EC2 tagging script
+118. Route53 DNS checker
+119. Backup validation script
+120. Azure VM status checker
+121. Azure VM start/stop
+122. Resource group inventory
+123. Azure disk snapshot
+124. Azure storage upload
+125. Azure cost usage
+126. NSG audit
+127. VM scale set checker
+128. Azure metrics fetcher
+129. Alert rule creator
+130. Tag compliance script
+131. Backup status checker
+132. Load balancer health check
+133. DNS checker
+134. Resource cleanup script
+135. K8s pod status checker
+136. Namespace usage report
+137. CrashLoopBackOff detector
+138. Deployment rollout checker
+139. Service endpoint validator
+140. ConfigMap/Secret reader
+141. Node health monitor
+142. PVC usage checker
+143. K8s event analyzer
+144. Auto-heal failing pods
 
-
-⚙️ 2. SERVICE & SYSTEMD AUTOMATION
-Modules: subprocess, os, argparse, time, sys, smtplib, requests
-
-Single systemd service status
-Multiple services status check
-Service status CLI (argparse)
-Multi-service CLI monitor
-Failed service auto-restart
-Service restart + notification
-
-
-☸️ 3. CONTAINER & KUBERNETES SCRIPTS
-Modules: subprocess, kubernetes, json, sys
-
-Docker container health check
-K8s pod status summary
-
-
-⏰ 4. SCHEDULING & CRON
-Modules: os, subprocess, datetime, time, sys
-
-Cron job execution monitor
-
-
-💻 5. SYSTEM MONITORING (CORE DEVOPS 🔥)
-Modules: psutil, os, sys, shutil
-
-Disk usage threshold alert
-Memory usage percentage
-Load average tracker
-Listening ports inventory
-Active network connections
-Swap usage alert
-Inode usage checker
-
-
-📜 6. LOG ANALYSIS & SECURITY
-Modules: re, collections, file I/O, subprocess, sys
-
-Log file tail follower
-Failed login attempts counter
-404 error log analyzer
-Security events scanner
-Log rotation status check
-Auditd events monitor
-
-
-🔐 7. SECURITY + SYSTEM HARDENING
-Modules: subprocess, os, sys, psutil
-
-Firewall rules validator
-SELinux status checker
-SSH authorized_keys checker
-Suspicious process detector
-
-
-🗄️ 8. BACKUP & AUTOMATION
-Modules: subprocess, os, hashlib, filecmp, sys
-
-Rsync backup with progress
-Directory sync monitor
-Database backup verifier
-Git repository updater
-Package update checker
-
-
-📊 9. REPORTING & NOTIFICATIONS
-Modules: flask, http.server, json, csv, smtplib, requests, sys
-
-Health check dashboard
-Alert email sender
-Slack/Teams notifier
-CSV health report generator
-JSON metrics exporter
-
-
-🔍 10. REGEX / TEXT PROCESSING
-Modules: re
-
-Log error pattern extractor
-IP address parser from logs
-Email extractor from files
-Apache log analyzer
-Password policy validator
-Config file parser using regex
-
-
-⚙️ 11. CONFIG MANAGEMENT
-Modules: configparser, json, os, re
-
-INI config reader tool
-Dynamic config updater
-Multi-env config loader
-Service config validator
-Config diff checker
-
-
-🌐 12. API AUTOMATION
-Modules: requests, json, sys
-
-API health checker
-Fetch weather API data
-Push monitoring data to API
-GitHub repo status checker
-Kubernetes API pod fetcher
-Slack webhook notifier
-REST API tester (GET/POST/DELETE)
-Retry API calls on failure
-JWT authentication client
-CLI API client tool
-
-
-📝 13. LOGGING (PRODUCTION GRADE 🔥)
-Modules: logging
-
-Log API failures
-System monitoring logger
-Script execution logger
-Error tracking system
-Log rotation handler
-Multi-level logging system
-Central log collector
-CLI activity logger
-Debug logger (replace print)
-Alert logging system
-
-
-📄 14. CSV BASED TOOLS
-Modules: csv
-
-Server health CSV report
-AWS inventory CSV exporter
-Process → CSV
-CSV → JSON converter
-User login tracker
-Failed login report
-Disk usage CSV report
-CSV validation tool
-Email list manager
-Multi-server CSV report
-
-
-📦 15. JSON BASED TOOLS
-Modules: json
-
-JSON log parser
-JSON → CSV converter
-API response analyzer
-JSON config validator
-JSON merger
-JSON diff tool
-YAML → JSON converter
-JSON metrics exporter
-System metrics JSON logger
-JSON key-value DB
-
-
-☁️ 16. AWS AUTOMATION
-Modules: boto3, json, sys
-
-EC2 status checker
-EC2 start/stop automation
-EBS snapshot creator
-S3 uploader
-S3 cleanup script
-IAM auditor
-IAM key rotator
-CloudWatch metrics fetcher
-Alarm creator
-Lambda deployment
-VPC inventory
-Security group audit
-RDS backup
-Auto-scaling checker
-Cost usage fetcher
-ELB health checker
-ECR cleanup
-S3 public access scanner
-Compliance checker
-EC2 tagging script
-Route53 DNS checker
-Backup validation
-
-
-☁️ 17. AZURE AUTOMATION
-Modules: azure SDK, json, sys
-
-Azure VM status checker
-VM start/stop automation
-Resource group inventory
-Disk snapshot tool
-Storage uploader
-Cost usage fetcher
-NSG audit
-VM scale set checker
-Monitoring metrics fetcher
-Alert rule creator
-Tag compliance script
-Backup status checker
-Load balancer health
-DNS checker
-Resource cleanup script
-
-
-☸️ 18. KUBERNETES AUTOMATION
-Modules: kubernetes, subprocess, json, sys
-
-Pod status checker
-Namespace usage report
-CrashLoopBackOff detector
-Deployment rollout checker
-Service endpoint validator
-ConfigMap/Secret reader
-Node health monitor
-PVC usage checker
-Event analyzer
-Auto-heal failing pods
+Just tell 👍
