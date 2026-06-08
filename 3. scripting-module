@@ -1,7 +1,0 @@
-21. Disk usage threshold alert        -- shutil / os, argparse, sys
-22. Memory usage percentage           -- psutil, sys
-25. Load average tracker              -- os, sys
-26. Listening ports inventory         -- psutil / socket, sys
-27. Active network connections        -- psutil, sys
-29. Swap usage alert                  -- psutil, sys
-30. Inode usage checker               -- os, subprocess (df -i), sys
