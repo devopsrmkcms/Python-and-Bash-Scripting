@@ -1,7 +1,7 @@
 21. Disk usage threshold alert        -- shutil / os, argparse, sys
 22. Memory usage percentage           -- psutil, sys
-23. CPU per-core utilization          -- psutil, sys
-24. Top CPU consuming processes       -- psutil, operator / sorted, sys
+23. CPU per-core utilization          -- psutil, sys                      ---> Pending
+24. Top CPU consuming processes       -- psutil, operator / sorted, sys   ---> Pending
 25. Load average tracker              -- os, sys
 26. Listening ports inventory         -- psutil / socket, sys
 27. Active network connections        -- psutil, sys
