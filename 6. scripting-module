@@ -1,7 +1,0 @@
-re module
-Log error pattern extractor
-IP address parser from logs
-Email extractor from files
-Apache log analyzer
-Password policy validator
-Config file parser using regex
