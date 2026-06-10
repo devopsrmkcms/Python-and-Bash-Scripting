@@ -33,7 +33,6 @@
 33. Firewall rules validator
 34. SELinux status checker
 35. SSH authorized\_keys checker
-36. Suspicious process detector
 37. Rsync backup with progress
 38. Directory sync monitor
 39. Database backup verifier
