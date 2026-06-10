@@ -30,7 +30,6 @@
 29. 404 error log analyzer
 30. Security events scanner
 31. Log rotation status check
-32. Auditd events monitor
 33. Firewall rules validator
 34. SELinux status checker
 35. SSH authorized\_keys checker
