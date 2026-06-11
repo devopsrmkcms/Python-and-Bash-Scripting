@@ -28,17 +28,14 @@
 27. Log file tail follower
 28. Failed login attempts counter
 29. 404 error log analyzer
-30. Security events scanner
 31. Log rotation status check
 33. Firewall rules validator
 34. SELinux status checker
 35. SSH authorized\_keys checker ---11/06/2026
-37. Rsync backup with progress
 38. Directory sync monitor
 39. Database backup verifier
 40. Git repository updater
 41. Package update checker
-42. Health check dashboard
 43. Alert email sender
 44. Slack/Teams notifier
 45. CSV health report generator
