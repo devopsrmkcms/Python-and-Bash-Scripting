@@ -1,0 +1,51 @@
+## ✅ **List‑A (Must Know)**
+
+1. os
+2. sys
+3. subprocess
+4. argparse
+5. logging
+6. json
+7. re
+8. hashlib
+9. requests
+10. psutil
+
+***
+
+## ✅ **List‑B (Should Know)**
+
+11. pathlib
+12. shutil
+13. glob
+14. datetime
+15. time
+16. csv
+17. yaml (PyYAML)
+18. configparser
+19. socket
+20. threading
+21. multiprocessing
+22. paramiko
+23. urllib
+24. http.client
+
+***
+
+## ✅ **List‑C (Optional / Advanced)**
+
+25. boto3
+26. azure-identity
+27. azure-mgmt-\*
+28. kubernetes
+29. docker
+30. pandas
+31. cryptography
+32. ssl
+33. schedule
+34. croniter
+35. unittest
+36. pytest
+37. loguru
+38. click
+39. rich
