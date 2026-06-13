@@ -1,0 +1,68 @@
+## ✅ **Important Python String/List/File Operations (Must Learn for Scripting)**
+
+***
+
+## ✅ 🔹 **List‑A (Must Know Operations)**
+
+1. `strip()`
+2. `split()`
+3. `join()`
+4. `replace()`
+5. `lower()`
+6. `upper()`
+7. `startswith()`
+8. `endswith()`
+9. `len()`
+10. `append()`
+11. `extend()`
+12. `remove()`
+13. `pop()`
+14. `in` (membership check)
+15. `for` loop iteration
+
+***
+
+## ✅ 🔹 **List‑B (Should Know Operations)**
+
+16. `find()`
+17. `index()`
+18. `count()`
+19. `sort()`
+20. `sorted()`
+21. `reverse()`
+22. `copy()`
+23. `clear()`
+24. `enumerate()`
+25. `zip()`
+26. `map()`
+27. `filter()`
+28. List comprehension (`[x for x in ...]`)
+
+***
+
+## ✅ 🔹 **List‑C (Optional / Advanced)**
+
+29. `partition()`
+30. `rsplit()`
+31. `rfind()`
+32. `format()`
+33. f-strings (`f"{var}"`)
+34. `any()`
+35. `all()`
+36. `set()` (for uniqueness)
+37. `dict.get()`
+38. Dictionary comprehension
+39. slicing (`[start:end:step]`)
+
+***
+
+✅ **Tip (Very important for DevOps):**  
+👉 Focus heavily on:  
+`strip`, `split`, `join`, `replace`, `startswith`, list comprehension
+
+***
+
+If you want next 👍  
+I can give:
+✅ real **DevOps script examples using each operation**  
+✅ or **practice questions (very useful for interviews)** 🚀
