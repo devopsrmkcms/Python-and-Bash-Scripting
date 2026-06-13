@@ -30,14 +30,14 @@
 29. 404 error log analyzer
 31. Log rotation status check
 33. Firewall rules validator
-34. SELinux status checker
+34. SELinux status checker                    ---No Problem
 35. SSH authorized\_keys checker ---11/06/2026
 38. Directory sync monitor
 39. Database backup verifier
 40. Git repository updater
 41. Package update checker
-43. Alert email sender
-44. Slack/Teams notifier
+43. Alert email sender                        ---No Action
+44. Slack/Teams notifier                      ---No Action
 45. CSV health report generator
 46. JSON metrics exporter
 47. Log error pattern extractor
@@ -56,7 +56,7 @@
 60. Push monitoring data to API endpoint
 61. GitHub repo status checker
 62. Kubernetes API pod fetcher
-63. Slack webhook notifier
+63. Slack webhook notifier                  ---No Action
 64. REST API tester (GET/POST/DELETE)
 65. Retry API calls on failure
 66. JWT authentication client
@@ -91,7 +91,7 @@
 95. JSON monitoring output
 96. System metrics JSON logger
 97. JSON key-value DB
-98. EC2 instance status checker
+98. EC2 instance status checker----AWS BOTO3
 99. EC2 start/stop automation
 100. EBS snapshot creator
 101. S3 bucket uploader
@@ -113,7 +113,7 @@
 117. EC2 tagging script
 118. Route53 DNS checker
 119. Backup validation script
-120. Azure VM status checker
+120. Azure VM status checker---AZURE
 121. Azure VM start/stop
 122. Resource group inventory
 123. Azure disk snapshot
@@ -128,7 +128,7 @@
 132. Load balancer health check
 133. DNS checker
 134. Resource cleanup script
-135. K8s pod status checker
+135. K8s pod status checker -----K8s
 136. Namespace usage report
 137. CrashLoopBackOff detector
 138. Deployment rollout checker
