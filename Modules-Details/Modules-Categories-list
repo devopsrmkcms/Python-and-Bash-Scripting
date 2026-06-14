@@ -1,5 +1,10 @@
-## ✅ **List‑A (Must Know)**
+Got it ✅ — **List‑A stays exactly as is**, and I removed any duplicates from **List‑B and List‑C**.
 
+***
+
+# ✅ ✅ **List‑A (Must Know) — FINAL (UNCHANGED)**
+
+```
 1. os
 2. sys
 3. subprocess
@@ -10,38 +15,42 @@
 8. hashlib
 9. requests
 10. psutil
-
-***
-
-## ✅ **List‑B (Should Know)**
-
-11. pathlib
-12. shutil
-13. glob
+11. ssl
+12. socket
+13. time
 14. datetime
-15. time
-16. csv
-17. yaml (PyYAML)
-18. configparser
-19. socket
-20. threading
-21. multiprocessing
-22. paramiko
-23. urllib
-24. http.client
+15. shutil
+```
 
 ***
 
-## ✅ **List‑C (Optional / Advanced)**
+# ✅ ✅ **List‑B (Should Know) — CLEANED (duplicates removed)**
 
-25. boto3
-26. azure-identity
-27. azure-mgmt-\*
-28. kubernetes
-29. docker
-30. pandas
-31. cryptography
-32. ssl
+```
+16. pathlib
+17. glob
+18. csv
+19. yaml (PyYAML)
+20. configparser
+21. threading
+22. multiprocessing
+23. paramiko
+24. urllib
+25. http.client
+```
+
+***
+
+# ✅ ✅ **List‑C (Optional / Advanced) — CLEANED**
+
+```
+26. boto3
+27. azure-identity
+28. azure-mgmt-*
+29. kubernetes
+30. docker
+31. pandas
+32. cryptography
 33. schedule
 34. croniter
 35. unittest
@@ -49,3 +58,4 @@
 37. loguru
 38. click
 39. rich
+```
