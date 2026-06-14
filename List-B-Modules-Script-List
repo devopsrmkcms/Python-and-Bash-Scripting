@@ -1,0 +1,70 @@
+1. pathlib
+2. glob
+3. csv
+4. yaml (PyYAML)
+5. configparser
+6. threading
+7. multiprocessing
+8. paramiko
+9. urllib
+10. http.client
+==================================================================
+1. Smart file organizer | pathlib, shutil | Path, rename, move
+2. Broken symlink finder | pathlib | is_symlink, exists
+3. File permission auditor | pathlib, os | stat, mode
+4. Large file finder | pathlib | stat, size filter
+5. Recent file tracker | pathlib, datetime | mtime compare
+
+6. Pattern-based log grouper | glob, shutil | glob, move
+7. Backup file deduplicator | glob, hashlib | pattern + hash
+8. Multi-folder search tool | glob, argparse | wildcard search
+9. Log cleaner by extension | glob | filter/delete
+10. Temp file sweeper | glob, os | match, remove
+
+11. CSV diff tool | csv | reader compare
+12. CSV merger tool | csv | combine rows
+13. CSV column extractor | csv | specific column read
+14. CSV sorter CLI | csv, argparse | sort data
+15. CSV duplicate remover | csv | unique filtering
+
+16. YAML config validator | yaml | safe_load
+17. YAML key extractor | yaml | nested access
+18. YAML merger tool | yaml | combine dicts
+19. YAML env switcher | yaml, argparse | select env
+20. YAML template renderer | yaml | variable replace
+
+21. INI env switcher | configparser, argparse | section select
+22. INI to JSON converter | configparser, json | transform
+23. Missing config key detector | configparser | compare keys
+24. Config override tool | configparser | update values
+25. Service config validator | configparser | check params
+
+26. Threaded URL latency checker | threading, requests, time | Thread, timing
+27. Threaded port scanner | threading, socket | concurrent connect
+28. Parallel log analyzer | threading, re | threads + regex
+29. Multi-thread download manager | threading, urllib | parallel fetch
+30. Threaded API monitor | threading, requests | parallel calls
+
+31. Parallel file checksum generator | multiprocessing, hashlib | Pool
+32. Multi-process URL checker | multiprocessing, requests | process loop
+33. CPU intensive task runner | multiprocessing | process spawn
+34. Parallel directory scanner | multiprocessing, pathlib | queue work
+35. Multi-process log analyzer | multiprocessing, re | parallel parse
+
+36. SSH file uploader | paramiko | SFTP put
+37. SSH config backup tool | paramiko | remote fetch
+38. Remote command scheduler | paramiko, time | exec loop
+39. SSH user audit tool | paramiko | whoami/id
+40. Remote disk usage checker | paramiko, df command | exec + parse
+
+41. HTTP file downloader CLI | urllib, argparse | urlretrieve
+42. HTTP headers inspector | urllib | headers
+43. Simple crawler tool | urllib | open links
+44. Proxy request tool | urllib | proxy handler
+45. Retry downloader | urllib, time | retry logic
+
+46. Low-level GET tester | http.client | request
+47. POST payload sender | http.client | send data
+48. HTTP response time tool | http.client, time | timing
+49. Raw API client CLI | http.client, argparse | CLI input
+50. Header-based auth tester | http.client | headers
