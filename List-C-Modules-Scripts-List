@@ -1,0 +1,98 @@
+1. boto3
+2. azure-identity
+3. azure-mgmt-*
+4. kubernetes
+5. docker
+6. pandas
+7. cryptography
+8. schedule
+9. croniter
+10. unittest
+11. pytest
+12. loguru
+13. click
+14. rich
+=============================================================
+1. EC2 instance status checker | boto3 | describe_instances
+2. EC2 start/stop automation | boto3 | start/stop
+3. EBS snapshot creator | boto3 | create_snapshot
+4. S3 bucket uploader | boto3 | upload_file
+5. S3 cleanup tool | boto3 | delete objects
+
+6. Azure VM status checker | azure-identity, azure-mgmt | auth + compute
+7. Azure VM start/stop tool | azure-mgmt | VM action
+8. Resource group inventory | azure-mgmt | list resources
+9. Azure cost usage fetcher | azure-mgmt | billing
+10. NSG rules audit | azure-mgmt | network rules
+
+11. Kubernetes pod status checker | kubernetes | list pods
+12. Deployment rollout checker | kubernetes | rollout status
+13. Namespace usage report | kubernetes | namespaces
+14. CrashLoopBackOff detector | kubernetes | pod status
+15. Node health monitor | kubernetes | nodes
+
+16. Docker container health check | docker SDK | container status
+17. Docker image cleaner | docker | remove images
+18. Container resource monitor | docker, psutil | usage
+19. Docker log analyzer | docker | logs
+20. Image size analyzer | docker | inspect
+
+21. CSV analytics dashboard | pandas | dataframe ops
+22. System metrics analyzer | pandas, psutil | aggregation
+23. Log data analyzer | pandas | filtering
+24. CSV aggregation tool | pandas | groupby
+25. Trend prediction script | pandas | rolling avg
+
+26. File encryption tool | cryptography | encrypt
+27. File decryption tool | cryptography | decrypt
+28. Password encryption utility | cryptography | hashing
+29. Secure config storage | cryptography | secure store
+30. Certificate validator | cryptography, ssl | cert verify
+
+31. Job scheduler script | schedule | schedule jobs
+32. Periodic health check | schedule, requests | job loop
+33. Multi-task scheduler | schedule | multiple jobs
+34. Scheduled backup tool | schedule, shutil | timed copy
+35. Alert scheduler | schedule, logging | alerts
+
+36. Cron expression parser | croniter | parse cron
+37. Next run time calculator | croniter | calculate time
+38. Cron validator tool | croniter | validate format
+39. Cron job simulator | croniter, time | simulate runs
+40. Cron-based scheduler | croniter, subprocess | execute jobs
+
+41. Unit test for API checker | unittest, requests | test cases
+42. Service health test suite | unittest | assertions
+43. File validator tests | unittest | test functions
+44. CLI tool test suite | unittest | CLI tests
+45. Automation test runner | unittest | batch test
+
+46. API test automation | pytest, requests | parametrize
+47. System test framework | pytest | fixtures
+48. CLI testing tool | pytest | input validation
+49. Load test cases | pytest | performance check
+50. Config test suite | pytest | validation
+
+51. Advanced logger | loguru | logging
+52. Error tracking logger | loguru | error logs
+53. Rotating logs system | loguru | rotation
+54. Debug logger tool | loguru | debug output
+55. Structured logging system | loguru | formatting
+
+56. CLI tool using click | click | CLI command
+57. Multi-command CLI app | click | subcommands
+58. API CLI tool | click, requests | command-based
+59. System utility CLI | click | argument parsing
+60. Automation CLI tool | click, subprocess | commands
+
+61. Service status dashboard | rich | table
+62. URL monitor dashboard | rich, requests | table display
+63. Progress bar downloader | rich, urllib | progress
+64. System health UI | rich, psutil | live stats
+65. Log viewer with colors | rich | formatted output
+
+66. Cloud + CLI tool | click, boto3 | AWS CLI tool
+67. K8s dashboard CLI | click, kubernetes, rich | CLI UI
+68. Docker monitor CLI | click, docker | container CLI
+69. Scheduled API monitor | schedule, requests, logging | automation
+70. Secure backup automation | cryptography, schedule, shutil | pipeline
