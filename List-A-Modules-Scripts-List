@@ -1,1 +1,109 @@
+Module-List-A
+1. os
+2. sys
+3. subprocess
+4. argparse
+5. logging
+6. json
+7. re
+8. hashlib
+9. requests
+10. psutil
+11. ssl
+12. socket
+13. time
+14. datetime
+15. shutil
+
+=====================================================================
+1. Disk usage threshold alert | os, shutil | path, stat, disk_usage
+2. Inode usage checker | os | statvfs
+3. Log rotation status check | os, time | mtime, size
+4. Directory sync monitor | os | walk, compare
+5. Database backup verifier | os | exists, size
+
+6. Script exit handler | sys | exit
+7. CLI error handler | sys, argparse | exit codes
+8. Failure notifier | sys | stderr
+9. Resource exit checker | sys | exit condition
+10. Pipeline status checker | sys | argv
+
+11. Single systemd service status | subprocess | run
+12. Multiple services status check | subprocess | loop
+13. Git repository updater | subprocess | command exec
+14. Firewall rules validator | subprocess | system commands
+15. Package update checker | subprocess | yum/apt
+
+16. URL checker CLI | argparse, requests | args parsing
+17. Service status CLI | argparse, subprocess | input handling
+18. Multi-service CLI monitor | argparse | list args
+19. Multi URL CLI monitor | argparse, requests | flags
+20. Log analyzer CLI | argparse, re | filtering
+
+21. Failed login counter | logging, re | log levels
+22. 404 log analyzer | logging, re | structured logging
+23. Error tracking system | logging | error logs
+24. Monitoring logger | logging | file logging
+25. Execution logger | logging | timestamps
+
+26. JSON metrics exporter | json | dump/load
+27. API response analyzer | json, requests | parse
+28. JSON validator | json | validate
+29. JSON converter | json | transform
+30. Service status JSON output | json, subprocess | structured data
+
+31. Failed login parser | re | search
+32. 404 analyzer | re | match
+33. IP extractor | re | findall
+34. Email extractor | re | regex extract
+35. Password validator | re | validation
+
+36. File integrity checker | hashlib | hash
+37. Password hash generator | hashlib | sha256
+38. Duplicate file finder | hashlib, os | compare hashes
+39. Backup checksum validator | hashlib | digest
+40. Config hash checker | hashlib | diff
+
+41. Single URL checker | requests | get
+42. Multiple URLs monitor | requests | loop
+43. Website title extractor | requests | fetch HTML
+44. API health checker | requests | status code
+45. Response time checker | requests, time | timing
+
+46. Memory usage percentage | psutil | virtual_memory
+47. Active connections | psutil | net_connections
+48. Swap usage alert | psutil | swap
+49. Listening ports | psutil | port list
+50. CPU usage tracker | psutil | cpu_percent
+
+51. SSL expiry checker | ssl, socket | cert parse
+52. SSL issuer checker | ssl | getpeercert
+53. SSL protocol checker | ssl | version
+54. HTTPS check tool | ssl, requests | verify
+55. Certificate alert tool | ssl, datetime | expiry calc
+
+56. TCP port tester | socket | connect
+57. DNS resolution monitor | socket | resolve
+58. Host availability checker | socket | timeout
+59. Latency checker | socket, time | timing
+60. Multi-port scanner | socket | loop connect
+
+61. Cron job monitor | time | sleep loop
+62. API retry tool | time, requests | retry
+63. Continuous URL monitor | time | loop
+64. Timeout handler | time | delay control
+65. Polling monitor | time | repeated execution
+
+66. Log rotation checker | datetime | timestamps
+67. SSL expiry calculator | datetime | delta
+68. Backup age checker | datetime | file age
+69. Job delay tracker | datetime | compare
+70. Uptime calculator | datetime | duration
+
+71. Disk usage checker | shutil | disk_usage
+72. Directory backup tool | shutil | copytree
+73. Log archiver | shutil | move
+74. Temp cleaner | shutil | remove
+75. Backup rotation manager | shutil | manage files
+```
 
