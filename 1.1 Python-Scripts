@@ -1,0 +1,30 @@
+1. Single URL HTTP status checker
+2. Multiple URLs health monitor
+3. URL checker CLI
+4. Multi URL CLI monitor
+5. Website title extractor
+6. SSL certificate expiry checker
+7. HTTP response time measurer
+8. Bulk ping health checker
+9. TCP port connectivity tester
+10. DNS resolution monitor
+11. Single systemd service status
+12. Multiple services status check
+13. Service status CLI
+14. Multi-service CLI monitor
+15. Failed service auto-restart
+16. Service restart + notification
+17. Docker container health check
+18. K8s pod status summary
+19. Cron job execution monitor
+20. Disk usage threshold alert
+21. Memory usage percentage
+22. Load average tracker
+23. Listening ports inventory
+24. Active network connections
+25. Swap usage alert
+26. Inode usage checker
+27. Log file tail follower
+28. Failed login attempts counter
+29. 404 error log analyzer
+30. Log rotation status check
