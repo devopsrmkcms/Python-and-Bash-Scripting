@@ -1,29 +1,75 @@
+======================================================================================================
+request
+======================================================================================================
 1. Single URL HTTP status checker            - request datetime sys
 2. Multiple URLs health monitor              - request datetime  sys
 3. URL checker CLI                           - request datetime  sys
 4. Multi URL CLI monitor                     - request, datetime  sys
 5. Website title extractor                   - request, beautifulsoup argparse, datetime
+
+========================================================================================================
+Socket & ssl Module
+========================================================================================================
 6. SSL certificate expiry checker            - socket ssl argparse, datetime
 7. DNS resolution monitor                    - socket, argparse  datetime
+
+
+
+
+========================================================================================================
+subprocess module
+========================================================================================================
+
 8. Single systemd service status             - subprocess, argparse, datetime, sys
 9. Multiple services status check            - subprocess, argparse, datetime, sys
 10. Service status CLI                       - subprocess, argparse, datetime, sys
 11. Multi-service CLI monitor                - subprocess, argparse, datetime, sys
 12. Failed service auto-restart              - subprocess, argparse, datetime, sys
-13. Service restart + notification
-14. Disk usage threshold alert
-15. Memory usage percentage
-16. Load average tracker
-17. Swap usage alert
-18. Inode usage checker
-19. HTTP response time measurer
-20. Bulk ping health checker
-21. TCP port connectivity tester
-22. DNS resolution monitor
-23. Cron job execution monitor
-24. Listening ports inventory
-25. Active network connections
-26. Log file tail follower
-27. Failed login attempts counter
-28. 404 error log analyzer
-29. Log rotation status check
+13. Service restart + notification           - subprocess, argparse, datetime, sys
+
+
+
+
+
+============================================================================================
+psutil
+=============================================================================================
+
+1. Disk usage threshold alert              - done
+2. Memory usage percentage                 - done
+3. Load average tracker                    - done
+4. Swap usage alert                        - done
+5. Inode usage checker                     - done    using subprocess
+6. CPU utilization monitor                 - done    using psutil.cpu_percent(interval=1)
+7. Per-core CPU utilization                - doone   using using psutil.cpu_percent(interval=1) and for loop with enumerate
+8. Top 5 CPU-consuming processes
+9. Top 5 Memory-consuming processe
+10. Active network connections
+11. Listening ports checker
+
+====================================================================================================
+re & logging module
+====================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================================================
+sys & datetime, time, shutil
+====================================================================================================
+
+
+====================================================================================================
+os, pathlib, argeparse
+====================================================================================================
