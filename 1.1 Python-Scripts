@@ -1,15 +1,15 @@
-1. Single URL HTTP status checker
-2. Multiple URLs health monitor
-3. URL checker CLI
-4. Multi URL CLI monitor
-5. Website title extractor
-6. SSL certificate expiry checker
-7. DNS resolution monitor
-8. Single systemd service status
-9. Multiple services status check
-10. Service status CLI
-11. Multi-service CLI monitor
-12. Failed service auto-restart
+1. Single URL HTTP status checker            - request datetime sys
+2. Multiple URLs health monitor              - request datetime  sys
+3. URL checker CLI                           - request datetime  sys
+4. Multi URL CLI monitor                     - request, datetime  sys
+5. Website title extractor                   - request, beautifulsoup argparse, datetime
+6. SSL certificate expiry checker            - socket ssl argparse, datetime
+7. DNS resolution monitor                    - socket, argparse  datetime
+8. Single systemd service status             - subprocess, argparse, datetime, sys
+9. Multiple services status check            - subprocess, argparse, datetime, sys
+10. Service status CLI                       - subprocess, argparse, datetime, sys
+11. Multi-service CLI monitor                - subprocess, argparse, datetime, sys
+12. Failed service auto-restart              - subprocess, argparse, datetime, sys
 13. Service restart + notification
 14. Disk usage threshold alert
 15. Memory usage percentage
