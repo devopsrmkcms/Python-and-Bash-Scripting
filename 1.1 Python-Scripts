@@ -1,3 +1,6 @@
+
+
+
 ======================================================================================================
 request
 ======================================================================================================
@@ -12,6 +15,11 @@ Socket & ssl Module
 ========================================================================================================
 6. SSL certificate expiry checker            - socket ssl argparse, datetime
 7. DNS resolution monitor                    - socket, argparse  datetime
+56. TCP port tester | socket | connect
+57. DNS resolution monitor | socket | resolve
+58. Host availability checker | socket | timeout
+59. Latency checker | socket, time | timing
+60. Multi-port scanner | socket | loop connect
 
 
 
@@ -50,6 +58,81 @@ psutil
 ====================================================================================================
 re & logging module
 ====================================================================================================
+21. Failed login counter | logging, re | log levels
+22. 404 log analyzer | logging, re | structured logging
+23. Error tracking system | logging | error logs
+24. Monitoring logger | logging | file logging
+25. Execution logger | logging | timestamps
+31. Failed login parser | re | search
+32. 404 analyzer | re | match
+33. IP extractor | re | findall
+34. Email extractor | re | regex extract
+35. Password validator | re | validation
+
+===============================================================================================================================
+JSON Module
+==============================================================================================================================
+Basic JSON Operations
+        ↓
+JSON + File Handling
+        ↓
+JSON + APIs
+        ↓
+JSON + System Administration
+        ↓
+JSON + Monitoring Automation
+...................................
+1-15 Basic JSON Programs
+
+JSON File Reader
+JSON File Writer
+Dictionary to JSON Converter
+JSON to Dictionary Converter
+JSON Pretty Printer
+JSON Key Extractor
+JSON Value Extractor
+Nested JSON Reader
+JSON Record Counter
+JSON Search Tool
+JSON Configuration Loader
+JSON Configuration Updater
+JSON Array Iterator
+JSON Object Comparator
+JSON Syntax Validator
+
+16-25 Intermediate JSON Programs
+
+API Response Analyzer
+Public IP Fetcher (JSON API)
+Weather Information Parser
+GitHub User Information Fetcher
+JSON Inventory Generator
+JSON-Based Service Configuration Manager
+JSON Log Generator
+JSON Merge Utility
+JSON Filtering Tool
+JSON Report Generator
+
+26-30 Advanced JSON Programs
+
+Server Health Metrics JSON Exporter
+SSL Certificate JSON Reporter
+Multi-Server Inventory Builder
+Service Status JSON Dashboard
+Incident Report JSON Generator
+
+Bonus 10 Advanced DevOps-Oriented JSON Projects
+......................................
+Dynamic Ansible Inventory Generator
+AWS Resource Inventory Exporter
+Azure Resource Inventory Exporter
+Kubernetes Resource JSON Analyzer
+Container Metadata Collector
+API Endpoint Health Monitor
+Security Scan JSON Reporter
+CI/CD Pipeline Result Aggregator
+Log Aggregation JSON Processor
+Infrastructure Drift Detection Report Generator
 
 
 
