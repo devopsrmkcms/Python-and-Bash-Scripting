@@ -122,6 +122,61 @@ JSON Configuration Updater
 JSON Array Iterator
 JSON Object Comparator
 JSON Syntax Validator
+=====================================================================
+Import JSON module
+Convert Python object to JSON string (json.dumps())
+Convert JSON string to Python object (json.loads())
+Write JSON to file (json.dump())
+Read JSON from file (json.load())
+Pretty print JSON (indent parameter)
+Sort JSON keys (sort_keys=True)
+Access JSON values using keys
+Add new key-value pairs
+Update existing values
+Delete keys from JSON object
+Check if key exists
+Iterate through JSON keys
+Iterate through JSON values
+Iterate through key-value pairs
+Convert dictionary to JSON
+Convert list to JSON
+Convert tuple to JSON
+Handle nested JSON objects
+Handle JSON arrays
+Parse nested JSON data
+Validate JSON format
+Handle JSON decoding errors
+Handle JSON encoding errors
+Convert JSON to dictionary
+Convert JSON to list
+Merge JSON objects
+Filter JSON data
+Search for keys in JSON
+Extract specific values from JSON
+Convert JSON to formatted file
+Minify JSON (separators parameter)
+Serialize custom Python objects
+Deserialize custom objects
+Convert JSON numbers to Python numbers
+Convert JSON booleans to Python booleans
+Convert JSON null to Python None
+Read large JSON files
+Write large JSON files
+Work with API JSON responses
+Generate JSON reports
+Compare JSON objects
+Flatten nested JSON
+Convert CSV to JSON
+Convert JSON to CSV
+Backup data in JSON format
+Load configuration from JSON file
+Save application settings in JSON
+JSON schema validation
+Recursive JSON traversal
+Extract all keys from nested JSON
+Extract all values from nested JSON
+
+===============================================================
 
 16-25 Intermediate JSON Programs
 
