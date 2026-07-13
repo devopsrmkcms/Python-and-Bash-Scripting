@@ -80,7 +80,60 @@ psutil
 
 ====================================================================================================
 re & logging module
+
+1. re.match()
+Purpose
+Check pattern only at the beginning of a string.
+
+2. re.search()
+Purpose
+Find first occurrence anywhere in string.
+
+3. re.findall()
+Purpose
+Return all matches as a list.
+
+4. re.finditer()
+Purpose
+Return iterator of match objects.
+When to Use
+Need match value + position.
+Large log files.
+Example
+
+5. re.fullmatch()
+Purpose
+Entire string must match pattern.
+When to Use
+Validation.
+Phone numbers.
+PAN, Aadhaar, Email.
+
+6. re.sub()
+Purpose
+Replace matching text.
+When to Use
+Log cleanup.
+Remove unwanted characters.
+Replace secrets.
 ====================================================================================================
+.       Any character
+^       Start
+$       End
+*       Zero or more
++       One or more
+?       Optional
+[]      Character set
+()      Group
+|       OR
+\d      Digit
+\D      Non-digit
+\w      Word
+\W      Non-word
+\s      Space
+\S      Non-space
+
+=====================================================================================================
 21. Failed login counter | logging, re | log levels
 22. 404 log analyzer | logging, re | structured logging
 23. Error tracking system | logging | error logs
